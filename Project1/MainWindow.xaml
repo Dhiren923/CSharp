@@ -1,0 +1,59 @@
+﻿<Window x:Class="Project1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid OpacityMask="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="154*"/>
+            <RowDefinition Height="265*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF75D416" Offset="0.49"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="Label1" Content="Crepes Crow Restarunt" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" FontFamily="MS Gothic" Foreground="#FF008BFF" Width="408" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="TextBox1" HorizontalAlignment="Left" Margin="324,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="37" Width="175" Foreground="#FFEEF1EE" Background="White" Grid.Row="1" Grid.ColumnSpan="2">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.892"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:Name="Submitbttn" Content="Submit" HorizontalAlignment="Left" Margin="377,169,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.094,0.448" Click="Submitbttn_Click" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Image x:Name="Image1" HorizontalAlignment="Left" Height="165" Margin="592,67,0,0" VerticalAlignment="Top" Width="151" Source="https://banner2.kisspng.com/20180504/hke/kisspng-art-clip-art-rabbit-kuso-5aece03b3c5a16.7639676515254733392472.jpg" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Image x:Name="Image2" HorizontalAlignment="Left" Height="140" Margin="289,92,0,0" VerticalAlignment="Top" Width="273" Source="https://www.sweetashoney.co/wp-content/uploads/pancakes-2020870_1920.jpg" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="165" Margin="97,88,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="151" Source="https://banner2.kisspng.com/20180504/hke/kisspng-art-clip-art-rabbit-kuso-5aece03b3c5a16.7639676515254733392472.jpg" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>
